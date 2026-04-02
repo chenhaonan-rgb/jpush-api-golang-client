@@ -7,6 +7,7 @@ type Options struct {
 	ApnsProduction    bool              `json:"apns_production"`               //APNs 是否生产环境
 	ApnsCollapseId    string            `json:"apns_collapse_id,omitempty"`    //更新 iOS 通知的标识符
 	BigPushDuration   int               `json:"big_push_duration,omitempty"`   //定速推送时长(分钟)
+	Classification    int               `json:"classification,omitempty"`      // 0：代表运营消息。 1：代表系统消息。不填默认为 0
 	ThirdPartyChannel ThirdPartyChannel `json:"third_party_channel,omitempty"` //推送请求下发通道
 }
 

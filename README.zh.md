@@ -6,6 +6,7 @@
 
 ## 概述
 极光推送 JPush REST API 的 Go 语言 SDK（推送、定时、报表、CID、短信）。现有代码基于官方文档并提供少量 HTTP 辅助封装与 payload 构建器。
+官方文档：https://docs.jiguang.cn/jpush/server/push/rest_api_v3_push
 
 当前支持：
 - ✅ Push API v3
