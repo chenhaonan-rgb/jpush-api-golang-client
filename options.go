@@ -45,6 +45,7 @@ type ThirdPartyOptions struct {
 	BigPicPath            string      `json:"big_pic_path,omitempty"`           //厂商big_pic_path, 为了适配厂商的消息大图片样式,目前支持小米/oppo两个厂商
 	OnlyUseVendorStyle    bool        `json:"only_use_vendor_style,omitempty"`  //是否是否使用自身通道设置样式
 	CallbackId            string      `json:"callback_id,omitempty"`            // vivo厂商通道回调ID
+	TargetUserType        string      `json:"target_user_type,omitempty"`       //华为消息类型，0:默认，正常消息、1:测试消息;测试消息限制每天500条，正式消息限制每天2条
 }
 
 type ThirdPartyChannel map[string]ThirdPartyOptions
